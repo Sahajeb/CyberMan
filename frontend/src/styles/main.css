@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #050d17;
+  color: #e0f2f1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 8%;
+  background: rgba(5, 13, 23, 0.8);
+  backdrop-filter: blur(15px);
+}
+
+.navbar .logo span {
+  color: #00e676;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* General button styles */
+.nav-actions a,
+.nav-actions button {
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Outline style (Sign In) */
+.btn-outline {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  border-color: #00e676;
+  color: #00e676;
+}
+
+/* Primary style (Register) */
+.btn-primary {
+  background: #00e676;
+  color: #000;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* Danger style (Logout) */
+.btn-danger {
+  background: #ff4d4d;
+  color: white;
+}
+
+.btn-danger:hover {
+  opacity: 0.85;
+}
+
+/* Username display */
+.username {
+  font-weight: 600;
+  color: #00e676;
+}

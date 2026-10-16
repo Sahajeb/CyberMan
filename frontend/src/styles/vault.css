@@ -1,0 +1,268 @@
+/* ===============================
+   VAULT CONTAINER
+================================= */
+.vault-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 50px 20px;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.vault-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===============================
+   HEADER
+================================= */
+.vault-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.vault-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.vault-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.primary-btn {
+  background: linear-gradient(90deg, #00e676, #00bcd4);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 255, 150, 0.3);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #475569;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===============================
+   ALERT
+================================= */
+.vault-alert {
+  background:transparent;
+  border: 1px solid #11e976;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   FORM
+================================= */
+.vault-form-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: #1e293b;
+  color: white;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+
+.password-input input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 12px 0;
+  color: white;
+}
+
+.icon-btn {
+  cursor: pointer;
+  margin-left: 12px;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  color: #00e676;
+  transform: scale(1.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* ===============================
+   VERTICAL STACK
+================================= */
+.vault-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===============================
+   HORIZONTAL CARD (ALL IN ONE LINE)
+================================= */
+.vault-card-item {
+  
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px 25px;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.vault-card-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 255, 150, 0.15);
+  border-color: rgba(0, 230, 118, 0.3);
+}
+
+/* LEFT SECTION */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-header span {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 3px;
+}
+
+/* PASSWORD BOX */
+.password-section {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 8px;
+  min-width: 260px;
+  gap: 12px;
+}
+
+.password-section input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ICON HOVER */
+.password-section svg,
+.card-actions svg {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.password-section svg:hover,
+.card-actions svg:hover {
+  color: #00e676;
+  transform: scale(1.1);
+}
+
+/* ACTION BUTTONS */
+.card-actions {
+  display: flex;
+  gap: 18px;
+  font-size: 16px;
+}
+
+/* ===============================
+   EMPTY STATE
+================================= */
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  color: #94a3b8;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .vault-card-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .password-section {
+    width: 100%;
+  }
+
+  .card-actions {
+    align-self: flex-end;
+  }
+
+  .vault-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
