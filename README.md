@@ -64,7 +64,7 @@ Make sure the image files exist in the `screenshots/` directory and that their n
 
 Add your flowchart image to the repository and update the path below to match its actual location. For example, save it as `docs/architecture.png`.
 
-![CyberMan system architecture](docs/architecture.png)
+![CyberMan system architecture](architecture.png)
 
 ### Email Scanning Flow
 
